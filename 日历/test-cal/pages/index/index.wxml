@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<button bindtap="buildData" size="mini">成人</button>
+<view class="container">
+  <calendar year="{{year}}" 
+            month="{{month}}" 
+            day="{{day}}" 
+            start-date="{{startDate}}" 
+            end-date="{{endDate}}" 
+            show-more-days="{{showMoreDays}}"
+            weeks-type="{{weeksType}}" 
+            cell-size="{{cellSize}}" 
+            active-type="{{activeType}}" 
+            lunar="{{showLunar}}" 
+            days-color="{{style}}" 
+            bottom="{{bottom}}" 
+            bindnextMonth="buildData" 
+            bindprevMonth="buildData" 
+            binddateChange="buildData">
+  </calendar>
+</view>
